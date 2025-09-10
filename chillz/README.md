@@ -1,12 +1,51 @@
-# React + Vite
+# 🍦 Chillz Ice Cream – React Web App  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A pixel-perfect React.js implementation of the provided Figma prototype for **Code-X-Novas Internship Coding Round**.  
+The application showcases different ice cream flavors with smooth page transitions, responsive layout, and clean modular code.  
 
-Currently, two official plugins are available:
+---
+- **Figma Design:** [View Design](https://www.figma.com/design/7wBPILkI59YRNAhIz2IWr9/Ice-Cream?node-id=0-1)  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## ⚡ Features  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 🎨 **Pixel-perfect UI** – matches the given Figma prototype  
+- 📱 **Responsive Design** – works seamlessly across desktop, tablet, and mobile  
+- ✨ **Animated Transitions** – smooth fade between flavor pages  
+- 🧩 **Reusable Components** – Navbar, ConeCard, and PageBase structure  
+- 🔗 **Routing with React Router** – clean navigation between pages  
+
+---
+
+## 🛠️ Tech Stack  
+
+- [React.js (Vite)](https://vitejs.dev/) – fast frontend build tool  
+- [React Router DOM](https://reactrouter.com/) – routing and navigation  
+- [Framer Motion](https://www.framer.com/motion/) – animations & transitions  
+- [CSS3 / Flexbox / Grid] – responsive styling  
+
+---
+---
+
+## 🚀 Getting Started  
+
+### 1️⃣ Clone Repository  
+```bash
+git clone https://github.com/your-username/code-x-icecream.git
+cd code-x-icecream
+```
+2️⃣ Install Dependencies
+```
+npm install
+```
+3️⃣ Run Locally
+```
+npm run dev
+```
+Visit 👉 http://localhost:5173/
+
+⚠️ Known Issues
+Transition speed might differ slightly across browsers
+
+Images are optimized but may load slower on first render due to size
