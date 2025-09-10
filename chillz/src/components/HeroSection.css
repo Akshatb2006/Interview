@@ -1,0 +1,121 @@
+.hero-wrapper{
+    display: flex;
+}
+
+.hero-section {
+  /* height: 100%; */
+  width: 100%;
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: space-between; */
+  /* padding-top: 140px; */
+  /* padding-bottom: 160px; */
+  gap: 20px;
+  padding-left: 5%;
+}
+
+.hero-content {
+  /* flex-basis: 45%;
+  max-width: 800px; 
+  z-index: 1; */
+}
+
+.hero-title {
+  font-family: var(--font-family-title);
+  font-weight: 400;
+  font-size: 160px;
+  line-height: 1;
+  letter-spacing: 0;
+  color: var(--text-color);
+  margin-bottom: 10px;
+}
+
+.hero-subtitle {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  font-size: 66px;
+  line-height: 1;
+  letter-spacing: 0;
+  color: var(--text-color);
+  margin-bottom: 30px;
+}
+
+.hero-description {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 1.4;
+  letter-spacing: 0;
+  margin-bottom: 16px;
+  color: #F9F9F9;
+  width: 70%;
+}
+
+.hero-description:last-of-type {
+    margin-bottom: 0;
+}
+
+.hero-image-container {
+  /* flex-basis: 55%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; */
+  background-color: blue;
+}
+
+.hero-icecream-image {
+  /* margin-top: 600px;
+  margin-left: 400px;
+  height: 50%; */
+  /* width: 50%; */
+  height: 85vh;
+  margin-right: 1em;
+  
+}
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0px); }
+}
+
+@media (max-width: 1200px) {
+  .hero-title { font-size: 120px; }
+  .hero-subtitle { font-size: 54px; }
+}
+
+@media (max-width: 1024px) {
+  .hero-title { font-size: 100px; }
+  .hero-subtitle { font-size: 48px; }
+  .hero-description { font-size: 18px; }
+}
+
+@media (max-width: 768px) {
+  .App {
+    height: auto;
+    min-height: 100vh;
+    overflow: visible;
+  }
+  .hero-section {
+    height: auto;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 120px;
+    padding-bottom: 200px;
+  }
+  .hero-content {
+    max-width: 100%;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero-title { font-size: 90px; }
+  .hero-subtitle { font-size: 42px; }
+  /* .hero-image-container { width: 250px; } */
+}
+
+@media (max-width: 480px) {
+  .hero-title { font-size: 70px; }
+  .hero-subtitle { font-size: 36px; }
+}

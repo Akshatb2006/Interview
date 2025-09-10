@@ -1,0 +1,22 @@
+[
+  { 
+    "name": "Strawberry", 
+    "gradient": "radial-gradient(circle at top left, #BE128D, #FF6CEE)", 
+    "image": "/images/Strawberry.png" 
+  },
+  { 
+    "name": "Evergreen", 
+    "gradient": "radial-gradient(circle at top left, #2A9949, #47F66E)", 
+    "image": "/images/Evergreen.png" 
+  },
+  { 
+    "name": "Chocolate", 
+    "gradient": "radial-gradient(circle at top left, #9C5C3F, #E0BDB0)", 
+    "image": "/images/Chocolate.png" 
+  },
+  { 
+    "name": "Blueberry", 
+    "gradient": "radial-gradient(circle at top left, #236CDA, #47C4F6)", 
+    "image": "/images/Blueberry.png" 
+  }
+]

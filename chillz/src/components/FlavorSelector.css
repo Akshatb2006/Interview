@@ -1,0 +1,86 @@
+.flavor-selector {
+  display: flex;
+  justify-content: flex-start;
+  gap: 30px;
+  position: absolute;
+  bottom: 40px;
+  left: 5%;
+  z-index: 10;
+}
+
+.flavor-item {
+  width: 137px;
+  height: 157px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 4px solid transparent;
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), 
+  border-bottom-color 0.3s ease;
+}
+
+.flavor-thumbnail {
+  max-width: 100%;
+  max-height: calc(100% - 14px);
+  object-fit: contain;
+  filter: drop-shadow(0px 5px 15px rgba(0, 0, 0, 0.15));
+}
+
+.flavor-item.selected {
+  /* transform: translateY(-15px) scale(1.1);
+   */
+     transition: transform 0.4s ease-in-out 0.2s;
+
+}
+
+.flavor-item:hover { 
+    transform: rotate(15deg) scale(1.5);
+}
+
+.flavor-item.selected {
+  border-bottom-color: var(--text-color);
+}
+
+@keyframes slideDownBackFull {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(100vh); } /* goes fully off screen */
+  100% { transform: translateY(0); }
+}
+
+.slide-down-back-full {
+  animation: slideDownBackFull 1.2s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+  .flavor-selector {
+    width: 90%;
+    left: 5%;
+    justify-content: center;
+    bottom: 30px;
+    gap: 15px;
+  }
+  .flavor-item {
+    width: 90px;
+    height: 104px;
+  }
+}
+
+@media (max-width: 480px) {
+  .flavor-item {
+    width: 70px;
+    height: 81px;
+  }
+}
